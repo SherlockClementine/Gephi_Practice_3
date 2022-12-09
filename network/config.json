@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "",
+    "link": "https://h20181080.wixsite.com/movie-detective/general-8",
+    "text": "이주성"
+  },
+  "text": {
+    "more": "\u003cp\u003e\n데이터 구축 방법\n\n2018년도 배급사 별 장르의 매출액을 피벗테이블을 통해 원본 데이터 제작\n\u003c/p\u003e\n\n\u003cp\u003e\n노드 속성: 매출액 \n\u003c/ p\u003e\n\n\u003cp\u003e\n노드의 크기: 매출액에 따라 다르게 설정\n\u003c/p\u003e\n\n\u003cp\u003e\n에지: 에지를 Sum으로 Weight값을 주어 배급사와 장르가 관계가 많을 수록 에지의 선을 두껍게 표현\n\u003c/p\u003e\n",
+    "intro": "2018년의 배급사와 장르의 관계를 매출액을 기준으로 시각화했습니다.",
+    "title": "2018 배급사와 장르"
+  },
+  "legend": {
+    "edgeLabel": "장르",
+    "colorLabel": "매출액",
+    "nodeLabel": "배급사"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "매출액",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": true,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
